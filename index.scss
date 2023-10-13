@@ -1,0 +1,50 @@
+$main-font: 'Quicksand', sans-serif;
+
+body {
+    background-color: rgb(43, 113, 108);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*Styling of the nav bar*/
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    font-family: $main-font;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #9c7f95;
+    color: white;
+  }
+
+  .topnav a.active {
+    background-color: #771d60;;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  /*Media queries*/
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
